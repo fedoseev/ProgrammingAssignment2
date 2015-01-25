@@ -6,14 +6,16 @@
 
 
 ## makeCacheMatrix function 
-## This function creates a matrix
-##   "<<-" tells R to use the parent of the current environment
+## This function creates a matrix a list that contains the function to get and set the values of the matrix
+## and get and set the values of its inverse
+##
+##   
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL # assigning initial value
   ## Set a matrix
   set <- function(y){
-       x <<- y
+       x <<- y      #  "<<-" tells R to use the parent of the current environment
        m <<- NULL
   }
 get <- function() {
