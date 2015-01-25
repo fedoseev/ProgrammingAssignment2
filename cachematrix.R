@@ -1,20 +1,28 @@
 ##  Class: "R Programming" at Coursera.com
 ##  Assignment 2 
-##  The functions below are to illustrate the consept of caching using R scoping propertiessearch()
+##  The functions below are to illustrate the consept of caching using R scoping properties.
 
 
 
 
 ## makeCacheMatrix function 
+## This function creates a matrix
+##   "<<-" tells R to use the parent of the current environment
 
 makeCacheMatrix <- function(x = matrix()) {
-  m <- NULL
+  m <- NULL # assigning initial value
+  ## Set a matrix
   set <- function(y){
        x <<- y
        m <<- NULL
   }
-get <- function()x
-setInverse <-function()
+get <- function() {
+      x
+  }
+setinverse <-function(inverse) m <<- inverse
+getinverse <-function()m
+list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
+
 }
 
 
@@ -25,4 +33,6 @@ setInverse <-function()
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
+  
+  
 }
