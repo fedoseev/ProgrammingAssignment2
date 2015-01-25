@@ -1,5 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+##  Class: "R Programming" at Coursera.com
+##  Assignment 2 
+##  The functions below are to illustrate the consept of caching using R scoping propertiessearch()
+
+
+
 
 ## Write a short comment describing this function
 
