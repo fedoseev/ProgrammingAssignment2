@@ -1,7 +1,7 @@
 ##  Class: "R Programming" at Coursera.com
 ##  Assignment 2 
 ##  The functions below are to illustrate the consept of caching using R scoping properties.
-##
+
 ##  Testing  scenario:
 ##x = rbind(c(4, 7), c(2, 6)) 
 ##y = makeCacheMatrix(x)
